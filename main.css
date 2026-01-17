@@ -5,3 +5,35 @@ body {
 h1 {
     color: white;
 }
+
+h2 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+ol {
+    list-style-type: lower-roman;
+    list-style-position: outside;
+    padding: 2em;
+}
+
+.flex-layout {
+    display: flex;
+    justify-content: space-between;
+}
+
+.side-bar {
+    flex-basis: 25%;
+}
+
+.main-content {
+    flex-grow: 1;
+}
