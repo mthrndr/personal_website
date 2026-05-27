@@ -18,7 +18,7 @@ for page in src/*.html; do
     for component in src/components/*.html; do
         component_name=$(basename "$component" .html)
         component_content=$(cat "$component")
-        page_content="${page_content/<!--$component_name-->/$component_content}"
+        page_content="${page_content/<--$component_name-->/$component_content}"
     done
 
     echo "$page_content" > "gen/$page_name"
